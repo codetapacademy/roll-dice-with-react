@@ -1,3 +1,6 @@
+import React from 'react'
+import { render } from 'react-dom'
+import { RollTheDiceApp } from './component/app'
 
 const RollTheDice = () => {
   console.log("Soon this function will roll the dice")
@@ -11,3 +14,5 @@ const RollTheDice = () => {
 console.log(
   RollTheDice()
 )
+
+render(<RollTheDiceApp />, document.querySelector('#roll-the-dice'))

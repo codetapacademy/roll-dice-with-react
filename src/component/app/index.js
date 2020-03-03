@@ -1,0 +1,1 @@
+export { RollTheDiceApp } from './app.component'
