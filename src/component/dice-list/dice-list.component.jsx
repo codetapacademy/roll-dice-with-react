@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { getDice } from '../../util'
 import { RollButton } from '../roll-button'
+import { DiceView } from '../dice-view'
 
 
 const DiceList = () => {
@@ -9,7 +10,7 @@ const DiceList = () => {
     console.log("what's cracking mate?")
   }
   return [
-      ...diceList.map((dice, amMulte) => <div key={amMulte}>{dice}</div>),
+      ...diceList.map((dice, amMulte) => <DiceView key={amMulte}>{dice}</DiceView>),
       <RollButton key="button" happenOnClick={happenOnClick}/>
   ]
 }

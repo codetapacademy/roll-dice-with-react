@@ -1,0 +1,1 @@
+export { DiceView } from './dice-view.component'
