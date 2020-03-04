@@ -1,5 +1,7 @@
 import React from 'react'
+import { StyledHeader } from './header.styled'
 
-const Header = ({titleHeader}) => <h1>{titleHeader}</h1>
+
+const Header = ({titleHeader}) => <StyledHeader>{titleHeader}</StyledHeader>
 
 export { Header }
