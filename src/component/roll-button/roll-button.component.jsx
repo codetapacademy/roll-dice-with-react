@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyledRollButton, StyledRollContainer } from './roll-button.styled'
 
-const RollButton = () => {
+const RollButton = ({happenOnClick}) => {
   return (
     <StyledRollContainer>
-      <StyledRollButton>
+      <StyledRollButton onClick={happenOnClick}>
         Roll
       </StyledRollButton>
     </StyledRollContainer>

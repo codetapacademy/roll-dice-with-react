@@ -5,7 +5,13 @@ import { RollButton } from '../roll-button'
 
 const DiceList = () => {
   const [diceList, rollTheDice] = useState(getDice())
-  return [...diceList.map(dice => <div>{dice}</div>), <RollButton/>]
+  const happenOnClick = () => {
+    console.log("what's cracking mate?")
+  }
+  return [
+      ...diceList.map((dice, amMulte) => <div key={amMulte}>{dice}</div>),
+      <RollButton key="button" happenOnClick={happenOnClick}/>
+  ]
 }
 
 export { DiceList }
