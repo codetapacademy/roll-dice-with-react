@@ -8,6 +8,7 @@ const DiceList = () => {
   const [diceList, rollTheDice] = useState(getDice())
   const happenOnClick = () => {
     console.log("what's cracking mate?")
+    rollTheDice(getDice())
   }
   return [
       ...diceList.map((dice, amMulte) => <DiceView key={amMulte}>{dice}</DiceView>),

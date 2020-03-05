@@ -1,6 +1,12 @@
 import React from 'react'
-import { StyledDiceView } from './dice-view.styled'
+import { StyledDiceView, StyledDiceContainer } from './dice-view.styled'
 
-const DiceView = ({children}) => <StyledDiceView>{children}</StyledDiceView>
+const DiceView = ({children}) => {
+  return (
+    <StyledDiceContainer>
+      <StyledDiceView className={`dice dice-${children}`}/>
+    </StyledDiceContainer>
+  )
+  }
 
 export { DiceView } 
